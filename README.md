@@ -11,7 +11,7 @@ SynthBel helps researchers work with Belarusian public-opinion surveys. It predi
 
 1. Open **Customize > Plugins > Add > Add marketplace** and enter `synthbel/synthbel-plugin`.
 2. Find **SynthBel** in the list and select **Install**.
-3. Open the installed plugin, go to its **Connectors** tab and select **Connect**. A SynthBel page opens: enter your access key and allow access.
+3. Open the installed plugin, go to its **Connectors** tab and select **Connect**. A SynthBel page opens: enter your access key, tick **Also allow respondent microdata** if your key includes microdata, and allow access. Without the tick, the microdata tools stay unavailable; to change this later, disconnect and connect again.
 
 If adding a marketplace is not available to you, download `synthbel-<version>-plugin.zip` from the repository's **Releases** page and use **Customize > Plugins > Add > Upload plugin** instead. An uploaded copy does not update itself; install the newer file when a new version is announced.
 
