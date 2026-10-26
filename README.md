@@ -11,7 +11,7 @@ SynthBel helps researchers work with Belarusian public-opinion surveys. It predi
 
 1. Open **Customize > Plugins > Add > Add marketplace** and enter `synthbel/synthbel-plugin`.
 2. Find **SynthBel** in the list and select **Install**.
-3. Open the installed plugin, go to its **Connectors** tab and select **Connect**. A SynthBel page opens: enter your access key, tick **Also allow respondent microdata** if your key includes microdata, and allow access. Without the tick, the microdata tools stay unavailable; to change this later, disconnect and connect again.
+3. Open the installed plugin, go to its **Connectors** tab and select **Connect**. A SynthBel page opens: enter your access key and select **Allow access** once. Respondent microdata are included when your key permits them; the option is ticked by default.
 
 If adding a marketplace is not available to you, download `synthbel-<version>-plugin.zip` from the repository's **Releases** page and use **Customize > Plugins > Add > Upload plugin** instead. An uploaded copy does not update itself; install the newer file when a new version is announced.
 
@@ -37,7 +37,7 @@ Codex then asks you to sign in to the SynthBel connector. In the ChatGPT app, wh
 
 ## Use
 
-In Cowork, type `/synthbel:question` or `/synthbel:fear`, or simply describe what you need. In Codex, mention `$synthbel-research-mcp` or describe the task.
+In Cowork, type `/` and choose **question** or **fear** from the SynthBel plugin, or simply describe what you need. In Codex, mention `$synthbel-research-mcp` or describe the task.
 
 ```text
 /synthbel:question Would you support this proposal?
