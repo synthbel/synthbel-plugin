@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "synthbel": {
+      "type": "streamable-http",
+      "url": "https://synthbel-corpus-mcp.synthbel.workers.dev/mcp"
+    }
+  }
+}

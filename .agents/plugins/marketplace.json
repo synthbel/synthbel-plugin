@@ -1,0 +1,20 @@
+{
+  "interface": {
+    "displayName": "SynthBel"
+  },
+  "name": "synthbel",
+  "plugins": [
+    {
+      "category": "Research",
+      "name": "synthbel",
+      "policy": {
+        "authentication": "ON_INSTALL",
+        "installation": "AVAILABLE"
+      },
+      "source": {
+        "path": "./plugins/synthbel",
+        "source": "local"
+      }
+    }
+  ]
+}

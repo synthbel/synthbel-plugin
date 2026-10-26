@@ -1,0 +1,6 @@
+interface:
+  display_name: "SynthBel research MCP"
+  short_description: "Predict survey answers and assess disclosure fear"
+  default_prompt: "Use $synthbel-research-mcp to handle /question or /fear with the connected corpus and show a result card."
+policy:
+  allow_implicit_invocation: true

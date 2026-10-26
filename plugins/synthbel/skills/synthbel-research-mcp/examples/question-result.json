@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "skill_version": "0.2.3",
+  "command": "question",
+  "target": {
+    "wording": "Would you support improving the local library?",
+    "options": [
+      {
+        "code": "1",
+        "label": "Support",
+        "group": "positive"
+      },
+      {
+        "code": "2",
+        "label": "Oppose",
+        "group": "negative"
+      },
+      {
+        "code": "99",
+        "label": "Difficult to say",
+        "group": "dk"
+      }
+    ],
+    "population": "Fictional adult audience for a layout example",
+    "date": "2026-10-26"
+  },
+  "model": {
+    "name": "Example model (fabricated fixture)",
+    "effort": "not applicable"
+  },
+  "mode": "digest",
+  "repeats": 1,
+  "release_id": "example-only",
+  "evidence_strength": "history",
+  "summary": "A fabricated result illustrating the prediction card.",
+  "digest": "Layout fixture only. An invented earlier measurement is 55% support, 30% opposition and 15% difficult to say. No actual survey is represented.",
+  "sources": [
+    {
+      "id": "EXAMPLE:1",
+      "title": "Fabricated layout source",
+      "date": "2026-01",
+      "page": 1,
+      "note": "No actual survey data."
+    }
+  ],
+  "runs": [
+    {
+      "status": "ok",
+      "shares": {
+        "1": 60,
+        "2": 25,
+        "99": 15
+      },
+      "reasoning": "This invented vector demonstrates the chart and the full original answer scale.",
+      "evidence_note": "I used the fabricated earlier measurement EXAMPLE:1, retaining its full scale and difficult-to-say share.",
+      "used_evidence_ids": [
+        "EXAMPLE:1"
+      ]
+    }
+  ],
+  "used_evidence": [
+    {
+      "id": "EXAMPLE:1",
+      "wording": "Would you support improving the local library?",
+      "source": "Fabricated earlier measurement",
+      "date": "2026-01",
+      "sample_n": 1000,
+      "item_n": 900,
+      "population": "Fictional adult audience",
+      "mode": "Fictional online questionnaire",
+      "options": [
+        {
+          "code": "1",
+          "label": "Support",
+          "group": "positive"
+        },
+        {
+          "code": "2",
+          "label": "Oppose",
+          "group": "negative"
+        },
+        {
+          "code": "99",
+          "label": "Difficult to say",
+          "group": "dk"
+        }
+      ],
+      "shares": {
+        "1": 55,
+        "2": 30,
+        "99": 15
+      },
+      "denominator": "All fictional eligible respondents, including difficult-to-say answers",
+      "complete_distribution": true,
+      "attribution": "explicit",
+      "use": "The example prediction starts from this invented earlier distribution.",
+      "limitations": "An illustrative record, not actual research evidence."
+    }
+  ]
+}

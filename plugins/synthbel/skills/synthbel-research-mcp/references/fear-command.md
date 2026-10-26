@@ -1,0 +1,11 @@
+# Fear command
+
+`/fear` refers to the last question result unless the user supplies a different question or source. Reuse that target and its evidence without repeating unrelated searches. Read [fear.md](fear.md) for the full F procedure and [fear-output.md](fear-output.md) for its quantitative contract.
+
+Use a supplied observed distribution or explicitly selected source when available. Otherwise, a previous `/question` result can be the baseline: mark it predicted, keep its model and date visible, and retain its prediction uncertainty separately. Never overwrite the question result. A new question without baseline first receives qualitative sensitivity, mechanisms, evidence limits and design suggestions. If the user asks for numbers, obtain a separately labelled recorded-answer prediction through `/question` before applying F.
+
+The model selects and explains the central correction and coherent alternatives; do not ask the user to invent a concealment coefficient. Keep original categories and denominator. Show the source baseline, central without-fear judgment, category changes in percentage points and at least lower/stronger plausible scenarios. Keep zero visible when evidence cannot rank it lower; discuss opposite-direction uncertainty where relevant. No scenario range is a confidence interval. A zero central correction needs a substantive explanation.
+
+Distinguish answer substitution, item refusal and participation loss. Do not use DK as a fear score. Participation requires its own audience/rate/missing-opinion assumptions from [participation-scenarios.md](participation-scenarios.md); it is never silently added to the disclosure correction. The first card's quantitative validator covers disclosure transfers, not population selection; present any participation calculation as a separately labelled conditional table with its assumptions.
+
+Return [the common result format](result-format.md). A qualitative-only result has no baseline, central distribution or numerical alternatives; unavailable is not zero. Use an observed-versus-judged comparison for observed baselines and a predicted-versus-judged comparison for predicted ones. Keep alternatives and uncertainty visible alongside the central change, not only inside details.

@@ -1,0 +1,13 @@
+{
+  "task": "Find comparable recorded measurements for this question, show changes across available waves, and explain any population or response-scale differences.",
+  "question": {
+    "wording": "How satisfied are you with local public transport?",
+    "options": [
+      {"code": "1", "label": "Satisfied", "kind": "substantive"},
+      {"code": "2", "label": "Dissatisfied", "kind": "substantive"},
+      {"code": "9", "label": "Don't know", "kind": "dont-know"}
+    ],
+    "population": "Adults living in Belarus"
+  },
+  "example_status": "Fabricated request; no survey result is asserted."
+}

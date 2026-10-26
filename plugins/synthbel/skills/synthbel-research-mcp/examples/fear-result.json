@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "skill_version": "0.2.3",
+  "command": "fear",
+  "target": {
+    "wording": "Would you support improving the local library?",
+    "options": [
+      {
+        "code": "1",
+        "label": "Support",
+        "group": "positive"
+      },
+      {
+        "code": "2",
+        "label": "Oppose",
+        "group": "negative"
+      },
+      {
+        "code": "99",
+        "label": "Difficult to say",
+        "group": "dk"
+      }
+    ],
+    "population": "Fictional adult audience for a layout example",
+    "date": "2026-10-26"
+  },
+  "model": {
+    "name": "Example model (fabricated fixture)",
+    "effort": "not applicable"
+  },
+  "release_id": "example-only",
+  "summary": "A fabricated disclosure scenario, not a measured correction.",
+  "sources": [
+    {
+      "id": "EXAMPLE:1",
+      "title": "Fabricated layout source",
+      "date": "2026-01",
+      "page": 1,
+      "note": "No actual survey data."
+    }
+  ],
+  "reasoning": "The donor allocation is illustrative; actual judgments require source evidence.",
+  "fear": {
+    "sensitivity": "Illustrative; no empirical assessment",
+    "mechanism": "A fictional disclosure mechanism used to demonstrate the display.",
+    "baseline": {
+      "kind": "observed",
+      "source": "Fabricated layout source, no actual respondents",
+      "denominator": "100% of the fictional eligible audience",
+      "shares": {
+        "1": 60,
+        "2": 25,
+        "99": 15
+      }
+    },
+    "central": {
+      "shares": {
+        "1": 58,
+        "2": 30,
+        "99": 12
+      },
+      "rationale": "An invented five-point movement into opposition illustrates a feasible correction.",
+      "transfers": [
+        {
+          "from": "1",
+          "to": "2",
+          "pp": 2
+        },
+        {
+          "from": "99",
+          "to": "2",
+          "pp": 3
+        }
+      ]
+    },
+    "alternatives": [
+      {
+        "label": "No-change comparator",
+        "shares": {
+          "1": 60,
+          "2": 25,
+          "99": 15
+        },
+        "rationale": "The evidence may justify no disclosure correction."
+      },
+      {
+        "label": "Stronger illustrative change",
+        "shares": {
+          "1": 55,
+          "2": 35,
+          "99": 10
+        },
+        "rationale": "A larger invented transfer for display purposes."
+      }
+    ],
+    "uncertainty": "These are coherent model scenarios, not confidence bounds. No actual fear effect is estimated.",
+    "zero_considered": "The no-change case is shown alongside the central judgment.",
+    "opposite_considered": "Opposite-direction disclosure is possible; this fixture does not establish a direction.",
+    "design_suggestions": [
+      "Keep explicit uncertainty and refusal options distinct."
+    ]
+  },
+  "used_evidence": [
+    {
+      "id": "EXAMPLE:1",
+      "wording": "Would you support improving the local library?",
+      "source": "Fabricated earlier measurement",
+      "date": "2026-01",
+      "sample_n": 1000,
+      "item_n": 900,
+      "population": "Fictional adult audience",
+      "mode": "Fictional online questionnaire",
+      "options": [
+        {
+          "code": "1",
+          "label": "Support",
+          "group": "positive"
+        },
+        {
+          "code": "2",
+          "label": "Oppose",
+          "group": "negative"
+        },
+        {
+          "code": "99",
+          "label": "Difficult to say",
+          "group": "dk"
+        }
+      ],
+      "shares": {
+        "1": 55,
+        "2": 30,
+        "99": 15
+      },
+      "denominator": "All fictional eligible respondents, including difficult-to-say answers",
+      "complete_distribution": true,
+      "attribution": "explicit",
+      "use": "The example prediction starts from this invented earlier distribution.",
+      "limitations": "An illustrative record, not actual research evidence."
+    }
+  ]
+}

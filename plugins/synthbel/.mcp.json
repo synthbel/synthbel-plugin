@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "synthbel": {
+      "type": "http",
+      "url": "https://synthbel-corpus-mcp.synthbel.workers.dev/mcp"
+    }
+  }
+}
