@@ -9,7 +9,7 @@
       "description": "Predict answer distributions for Belarusian survey questions, assess disclosure fear and search Belarusian survey evidence through the SynthBel research connector.",
       "name": "synthbel",
       "source": "./plugins/synthbel",
-      "version": "0.2.4"
+      "version": "0.2.5"
     }
   ]
 }

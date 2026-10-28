@@ -11,10 +11,12 @@ from pathlib import Path
 import re
 
 
-VERSION = "0.2.4"
+VERSION = "0.2.5"
 MODES = {"digest", "search", "neurodigest"}
 FAILURES = {"refusal", "no_estimate", "invalid", "error"}
 TOLERANCE = 0.011
+# Printed source percentages are rounded; a printed total of 98.5-101.5 is the source, not an error.
+SOURCE_ROUNDING = 1.5
 
 
 def require(condition, message):
@@ -53,11 +55,11 @@ def number(value):
     return float(value)
 
 
-def distribution(value, codes, total=100):
+def distribution(value, codes, total=100, tolerance=TOLERANCE):
     require(isinstance(value, dict) and set(value) == set(codes), "Shares must include exactly the original option codes")
     numbers = {code: number(value[code]) for code in codes}
     require(all(0 <= share <= 100 for share in numbers.values()), "Shares must lie between 0 and 100")
-    require(abs(sum(numbers.values()) - total) <= TOLERANCE, "Distribution total does not match its denominator")
+    require(abs(sum(numbers.values()) - total) <= tolerance, "Distribution total does not match its denominator")
     return numbers
 
 
@@ -153,11 +155,13 @@ def validate_evidence(data):
             require(codes and len(set(codes)) == len(codes), "Preserve the evidence scale")
             require(set(record["shares"]).issubset(codes), "Evidence shares contain an unknown code")
             values = [number(value) for value in record["shares"].values()]
-            require(all(0 <= value <= 100 for value in values) and sum(values) <= 100 + TOLERANCE,
+            require(all(0 <= value <= 100 for value in values) and sum(values) <= 100 + SOURCE_ROUNDING,
                     "Invalid source shares")
             require(record.get("denominator"), "Source shares need a denominator")
             if record.get("complete_distribution"):
-                distribution(record["shares"], codes)
+                distribution(record["shares"], codes, tolerance=SOURCE_ROUNDING)
+            if abs(sum(values) - 100) > TOLERANCE and sum(values) > 100:
+                record["printed_total"] = round(sum(values), 3)
     for run in data.get("runs", []):
         require(set(run.get("used_evidence_ids", [])).issubset(explicit), "A prediction cites an unavailable evidence record")
 

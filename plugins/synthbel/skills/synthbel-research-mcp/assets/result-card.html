@@ -33,7 +33,7 @@ let copyRows=[];
 el("question").textContent=d.target.wording;
 el("audience").textContent=d.target.population+" · "+d.target.date;
 el("summary").textContent=d.summary||"";
-for(const text of [d.command==="question"?({digest:"Prediction from v0.22 digest",search:"Model-led search",neurodigest:"Prediction from neurodigest"}[d.mode]):"Disclosure fear assessment",d.model.name,d.command==="question"?d.repeats+" prediction(s)":null])if(text)el("badges").append(node("span",text,"pill"));
+for(const text of [d.command==="question"?({digest:"Prediction from digest (P0 v0.23 candidate)",search:"Model-led search",neurodigest:"Prediction from neurodigest"}[d.mode]):"Disclosure fear assessment",d.model.name,d.command==="question"?d.repeats+" prediction(s)":null])if(text)el("badges").append(node("span",text,"pill"));
 const makeTable=(head,rows,parent)=>{const wrap=node("div",undefined,"scroll"),table=node("table"),thead=node("thead"),tr=node("tr");for(const text of head)tr.append(node("th",text));thead.append(tr);table.append(thead);const body=node("tbody");for(const row of rows){const tr=node("tr");for(const text of row)tr.append(node("td",text));body.append(tr);}table.append(body);wrap.append(table);parent.append(wrap);return [head,...rows];};
 const palette=["#315d88","#ab583f","#558879","#82618f","#ad8642","#787f87"];
 const colors=options=>Object.fromEntries(options.map((o,i)=>[o.code,o.group==="negative"?(o.strength==="weak"?"#e5a18f":"#aa3e2b"):o.group==="positive"?(o.strength==="weak"?"#81a9ca":"#20527d"):o.group==="dk"?"#e6e2da":o.group==="neutral"?"#c9c6bf":o.group==="refusal"?"#94999f":palette[i%palette.length]]));
