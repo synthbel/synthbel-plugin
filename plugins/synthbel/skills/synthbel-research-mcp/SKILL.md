@@ -2,7 +2,7 @@
 name: synthbel-research-mcp
 description: Predict Belarusian survey answers with /question, assess disclosure fear with /fear, and research evidence through the connected SynthBel MCP.
 metadata:
-  version: "0.2.3"
+  version: "0.2.4"
 ---
 
 # SynthBel questions and fear

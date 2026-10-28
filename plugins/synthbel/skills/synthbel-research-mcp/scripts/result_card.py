@@ -11,7 +11,7 @@ from pathlib import Path
 import re
 
 
-VERSION = "0.2.3"
+VERSION = "0.2.4"
 MODES = {"digest", "search", "neurodigest"}
 FAILURES = {"refusal", "no_estimate", "invalid", "error"}
 TOLERANCE = 0.011
