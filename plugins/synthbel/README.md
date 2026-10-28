@@ -57,4 +57,9 @@ The plugin sends your questions and search requests to the SynthBel research ser
 
 ## Updates
 
-Claude and Codex check this repository for new versions. This repository is generated from the SynthBel research project; please report problems to the SynthBel team rather than editing these files.
+Changes are listed in [CHANGELOG.md](CHANGELOG.md). Server (MCP) changes apply to everyone at once. Plugin (skill) changes reach you only when your copy of the plugin is updated:
+
+- **Claude Code**: automatic updates for this marketplace are off by default. Turn them on in `/plugin` under **Marketplaces > synthbel > Enable auto-update**, or update by hand with `/plugin marketplace update synthbel`.
+- **Uploaded zip**: install the newer file from the **Releases** page.
+
+This repository is generated from the SynthBel research project; please report problems to the SynthBel team rather than editing these files.
