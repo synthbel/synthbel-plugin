@@ -13,6 +13,10 @@ Predictions and fear assessments are model judgments, not survey measurements.
 - Every digest request names a population. When none is given, the plugin uses adults in Belarus (18+) and says so in the answer.
 - Result cards accept printed source percentages that sum to between 98.5 and 101.5 because of rounding. Predicted distributions must still sum to 100.
 
+## Server (MCP) 0.1.5 (2026-10-29)
+
+- A small number of sources are now available to the SynthBel research team only and no longer appear for partner keys in any tool: source lists, question and finding search, histories, report pages and microdata.
+
 ## Server (MCP) 0.1.4 (2026-10-28)
 
 - Finding search results fit within client result limits. When a response would be too large, the extraction detail of the lowest-ranked findings is omitted with an explicit note; no finding is dropped, and values, wording, page and document ids are kept.
